@@ -1,5 +1,17 @@
+/* -------------------------------- */
+/* Home / Landing Page              */
+/* -------------------------------- */
+
+.home {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
 #home-screen {
     min-height: 100vh;
+    min-height: 100svh;
+    width: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -7,74 +19,114 @@
     align-items: center;
     text-align: center;
     overflow: hidden;
+    padding: 92px 24px 72px;
+    background: #ffffff;
+    color: #202124;
 }
 
 .home-content {
+    width: min(760px, 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .logo {
-    width: 220px;
-    margin-bottom: 35px;
+    width: clamp(150px, 18vw, 220px);
+    height: auto;
+    margin-bottom: 24px;
 }
 
-h1 {
+#home-screen h1 {
     font-weight: 700;
-    margin-bottom: 15px;
-    color: white;
+    margin: 0 0 12px;
+    color: #252525;
+    line-height: 1.15;
 }
 
 .subtitle {
-    font-size: 22px;
-    color: #dcdcdc;
-    margin-bottom: 8px;
+    font-size: clamp(18px, 2vw, 22px);
+    color: #333333;
+    margin: 0 0 6px;
 }
 
 .description {
-    color: #8f8f8f;
-    margin-bottom: 40px;
+    color: #666666;
+    margin: 0 0 22px;
 }
 
-.btn {
+.home-steps {
+    width: min(610px, 100%);
+    margin: 0 0 26px;
+    padding: 0 12px 0 32px;
+    text-align: left;
+    color: #333333;
+    font-size: clamp(14px, 1.6vw, 17px);
+    line-height: 1.55;
+}
+
+.home-steps li {
+    margin-bottom: 5px;
+    padding-left: 4px;
+}
+
+.home-steps li:last-child {
+    margin-bottom: 0;
+}
+
+.home-steps strong {
+    color: #202020;
+}
+
+#home-screen .btn {
     padding: 12px 32px;
 }
 
-small {
-    margin-top: 40px;
-    color: #777;
+#home-screen small {
+    margin-top: 28px;
+    color: #777777;
 }
+
+/* -------------------------------- */
+/* Corner Logos                     */
+/* -------------------------------- */
 
 .home-corner-logo {
     position: absolute;
     z-index: 2;
     object-fit: contain;
+    display: block;
 }
 
+/* The source logos have different proportions, so their widths are
+   intentionally different while their visual size stays balanced. */
 .home-otbi-logo {
-    top: 24px;
+    top: 20px;
     left: 24px;
     width: 190px;
     height: auto;
 }
 
 .home-ou-logo {
-    top: 24px;
+    top: 20px;
     right: 24px;
     width: 115px;
     height: 115px;
 }
 
+/* -------------------------------- */
+/* Powered By                       */
+/* -------------------------------- */
+
 .powered-by {
     position: absolute;
     right: 24px;
-    bottom: 20px;
+    bottom: 16px;
     z-index: 2;
     display: flex;
     align-items: center;
     gap: 8px;
-    color: #b8b8b8;
+    color: #666666;
     font-size: 14px;
     white-space: nowrap;
 }
@@ -85,31 +137,113 @@ small {
     display: block;
 }
 
-@media (max-width: 600px) {
+/* -------------------------------- */
+/* Responsive                       */
+/* -------------------------------- */
+
+@media (max-width: 768px) {
+    #home-screen {
+        padding: 105px 20px 68px;
+    }
+
     .home-otbi-logo {
         top: 16px;
         left: 16px;
-        width: 135px;
+        width: 145px;
     }
 
     .home-ou-logo {
         top: 16px;
         right: 16px;
-        width: 75px;
-        height: 75px;
-    }
-
-    .powered-by {
-        right: 16px;
-        bottom: 14px;
-        font-size: 12px;
-    }
-
-    .powered-by img {
-        width: 110px;
+        width: 88px;
+        height: 88px;
     }
 
     .logo {
         width: 180px;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        margin-bottom: 20px;
+    }
+
+    .home-steps {
+        width: min(520px, 100%);
+        margin-bottom: 24px;
+        padding-left: 30px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #home-screen {
+        min-height: 100svh;
+        padding: 94px 16px 72px;
+    }
+
+    .home-otbi-logo {
+        top: 14px;
+        left: 12px;
+        width: 122px;
+    }
+
+    .home-ou-logo {
+        top: 14px;
+        right: 12px;
+        width: 72px;
+        height: 72px;
+    }
+
+    .logo {
+        width: 155px;
+        margin-bottom: 18px;
+    }
+
+    #home-screen h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .home-steps {
+        width: 100%;
+        margin-bottom: 22px;
+        padding-left: 27px;
+        padding-right: 2px;
+        font-size: 14px;
+        line-height: 1.45;
+    }
+
+    .home-steps li {
+        margin-bottom: 7px;
+    }
+
+    #home-screen .btn {
+        width: min(100%, 290px);
+        padding: 11px 20px;
+        font-size: 17px;
+    }
+
+    #home-screen small {
+        margin-top: 22px;
+    }
+
+    .powered-by {
+        right: 12px;
+        bottom: 10px;
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .powered-by img {
+        width: 88px;
     }
 }
