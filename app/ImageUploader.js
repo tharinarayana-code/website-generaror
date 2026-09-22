@@ -1,3 +1,5 @@
+import FileValidator from "./FileValidator.js";
+
 export default class ImageUploader {
 
     constructor(component, prefix) {
@@ -40,6 +42,16 @@ export default class ImageUploader {
 
             if (!file) {
 
+                return;
+
+            }
+
+            const result = FileValidator.validateImage(file);
+
+            if (!result.valid) {
+
+                this.input.value = "";
+                FileValidator.showModal(result.message);
                 return;
 
             }

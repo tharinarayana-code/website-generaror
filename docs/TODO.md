@@ -92,6 +92,18 @@
 - [ ] Test Preview on a physical mobile device.
 - [ ] Review mobile layout across all pages.
 
+### Beginner-Friendly Form
+
+- [x] Add explicit text-field limits.
+- [x] Add explicit image type and size limits.
+- [x] Add responsive invalid-file modal.
+- [x] Add short purpose explanations beside field names.
+- [x] Add example placeholders.
+- [x] Make detailed service descriptions optional.
+- [x] Add minimum detailed-description length for service pages.
+- [x] Hide service-page buttons when no qualifying detailed description exists.
+- [x] Add Preview Only notice for new-tab previews.
+
 ### Production Polish
 
 - [ ] Review Success page messaging and deployment status presentation.

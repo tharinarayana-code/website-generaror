@@ -284,3 +284,34 @@ The generated website renders correctly outside the generator.
 - Service detail pages can render their corresponding service image.
 - The existing production deployment flow remains unchanged.
 
+
+## 2026-09-22 — Beginner-Friendly Details Form
+
+### Added
+
+- Added explicit character limits to all website-details text inputs and textareas.
+- Added explicit image type and 5 MB size limits for Hero, About, and Service images.
+- Added responsive file-validation modal messages for unsupported or oversized images; rejected files are cleared and not retained.
+- Added short purpose explanations beside form-field names.
+- Added bracketed examples to form placeholders.
+- Made Service Detailed Description optional.
+- Added a 120-character minimum for creating a separate service detail page.
+- Service detail pages and their Learn More buttons are now created only when the detailed description reaches the minimum length.
+- Added a maximum of 10 services.
+- Added a responsive Preview Only notice to previews opened in a new tab.
+
+### Changed
+
+- Service validation now requires only the service image, name, and brief description.
+- Service detail-page generation skips services without a qualifying detailed description.
+- Home-page service cards hide Learn More when no service detail page is available.
+
+
+## 2026-09-22 — Form Polish
+
+### Changed
+
+- Reduced the size of character-limit/helper text so it no longer competes visually with field names.
+- Removed the heading icons from the Hero Title and About Section Heading fields.
+- Added a customizable Services section heading, matching the About section's editable heading behavior.
+- The generated website now uses the custom Services heading in the Services section.

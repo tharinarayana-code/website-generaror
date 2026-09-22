@@ -1,91 +1,35 @@
 <section class="hero card component-card shadow-sm border-0 mb-4 mt-4">
-
     <div>
-    <div class="card-header component-header">
-        <h4>
-            <i class="bi bi-image-fill me-2"></i>
-            Hero</h4>
-    </div>
-    <div class="component-body">
-        <div class="alert alert-info mb-4">
-
-            <i class="bi bi-lightbulb-fill me-2"></i>
-
-            <strong>Hero Section</strong>
-
-            <p class="mb-0 mt-2">
-
-                This is the first thing visitors will see when they open your website.
-                Choose a high-quality image and add a clear title and tagline to make a
-                strong first impression.
-
-            </p>
-
+        <div class="card-header component-header">
+            <h4><i class="bi bi-image-fill me-2"></i>Hero</h4>
+            <small class="text-muted">Add the main image and title visitors will see first on your website.</small>
         </div>
-        <div class="mb-4">
-
-            <label for="hero-image-button" class="form-label">
-                <i class="bi bi-card-image me-2"></i>
-                Hero Image *
-            </label>
-
-            <button
-                id="hero-image-button"
-                class="btn btn-outline-primary"
-                type="button">
-
-                <i class="bi bi-upload me-2"></i>
-                Select Hero Image
-
-            </button>
-
-            <input
-                id="hero-image-input"
-                type="file"
-                accept="image/*"
-                hidden>
-
-            <div
-                id="hero-image-name"
-                class="small text-muted mt-2">
-
-                No image selected
-
+        <div class="component-body">
+            <div class="mb-4">
+                <label for="hero-image-button" class="form-label">
+                    <i class="bi bi-card-image me-2"></i>
+                    Hero Image (Main image visitors see) <span class="text-danger">*</span>
+                </label>
+                <button id="hero-image-button" class="btn btn-outline-primary" type="button">
+                    <i class="bi bi-upload me-2"></i>Select Hero Image
+                </button>
+                <input id="hero-image-input" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+                <div class="form-text">Allowed: JPG, JPEG, PNG or WebP • Max 5 MB.</div>
+                <div id="hero-image-name" class="small text-muted mt-2">No image selected</div>
+                <div class="image-preview-container mt-3">
+                    <img id="hero-preview" class="image-preview" hidden>
+                </div>
             </div>
-
-            <div class="image-preview-container mt-3">
-
-                <img
-                    id="hero-preview"
-                    class="image-preview"
-                    hidden>
-
+            <div class="mb-3">
+                <label for="hero-title" class="form-label">Hero Title (Main heading)</label>
+                <input id="hero-title" class="form-control" type="text" maxlength="80" placeholder="[Example: Freshly Baked, Every Morning]">
+                <div class="form-text">Max 80 characters.</div>
             </div>
-
-        </div>
-        <div class="mb-3">
-            <label for="hero-title" class="form-label">
-                <i class="bi bi-type-h1 me-2"></i>
-                Hero Title
-            </label>
-            <input
-                id="hero-title"
-                class="form-control"
-                type="text"
-                placeholder="Welcome to Our Business">
-        </div>
-        <div>
-            <label for="hero-tagline" class="form-label">
-                <i class="bi bi-chat-quote me-2"></i>
-                Hero Tagline
-            </label>
-            <textarea
-                id="hero-tagline"
-                class="form-control"
-                rows="3"
-                placeholder="Quality • Trust • Excellence"></textarea>
+            <div>
+                <label for="hero-tagline" class="form-label"><i class="bi bi-chat-quote me-2"></i>Hero Tagline (Short message below the title)</label>
+                <textarea id="hero-tagline" class="form-control" rows="3" maxlength="200" placeholder="[Example: Handmade breads and cakes made fresh every day.]"></textarea>
+                <div class="form-text">Max 200 characters.</div>
+            </div>
         </div>
     </div>
-</div>
-
 </section>

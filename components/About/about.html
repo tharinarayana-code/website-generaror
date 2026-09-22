@@ -1,97 +1,35 @@
 <section class="about card component-card shadow-sm border-0 mb-4 mt-4">
-
     <div>
-
-    <div class="card-header component-header">
-        <h4><i class="bi bi-info-circle-fill me-2"></i>About</h4>
-        <small class="text-muted">Introduce your business to visitors.</small>
-    </div>
-
-    <div class="component-body">
-
-        <div class="mb-4">
-
-            <label
-                for="about-image-button"
-                class="form-label">
-
-                <i class="bi bi-card-image me-2"></i>
-                About Image *
-
-            </label>
-
-            <button
-                id="about-image-button"
-                class="btn btn-outline-primary"
-                type="button">
-
-                <i class="bi bi-upload me-2"></i>
-                Select About Image
-
-            </button>
-
-            <input
-                id="about-image-input"
-                type="file"
-                accept="image/*"
-                hidden>
-
-            <div
-                id="about-image-name"
-                class="small text-muted mt-2">
-
-                No image selected
-
+        <div class="card-header component-header">
+            <h4><i class="bi bi-info-circle-fill me-2"></i>About</h4>
+            <small class="text-muted">Introduce your business to visitors.</small>
+        </div>
+        <div class="component-body">
+            <div class="mb-4">
+                <label for="about-image-button" class="form-label">
+                    <i class="bi bi-card-image me-2"></i>
+                    About Image (Image for this section) <span class="text-danger">*</span>
+                </label>
+                <button id="about-image-button" class="btn btn-outline-primary" type="button">
+                    <i class="bi bi-upload me-2"></i>Select About Image
+                </button>
+                <input id="about-image-input" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+                <div class="form-text">Allowed: JPG, JPEG, PNG or WebP • Max 5 MB.</div>
+                <div id="about-image-name" class="small text-muted mt-2">No image selected</div>
+                <div class="image-preview-container mt-3">
+                    <img id="about-preview" class="image-preview" hidden>
+                </div>
             </div>
-
-            <div class="image-preview-container mt-3">
-
-                <img
-                    id="about-preview"
-                    class="image-preview"
-                    hidden>
-
+            <div class="mb-3">
+                <label for="about-heading" class="form-label">Section Heading (Title for this section) <span class="text-danger">*</span></label>
+                <input id="about-heading" class="form-control" type="text" value="About Us" maxlength="80" placeholder="[Example: About Our Bakery]">
+                <div class="form-text">Max 80 characters.</div>
             </div>
-
+            <div>
+                <label for="about-description" class="form-label"><i class="bi bi-text-paragraph me-2"></i>Description (Tell visitors about your business) <span class="text-danger">*</span></label>
+                <textarea id="about-description" class="form-control" rows="6" maxlength="1000" placeholder="[Example: We are a family-owned bakery serving fresh breads, cakes and pastries in Hyderabad since 2015.]"></textarea>
+                <div class="form-text">Max 1000 characters.</div>
+            </div>
         </div>
-
-        <div class="mb-3">
-
-            <label
-                for="about-heading"
-                class="form-label">
-                <i class="bi bi-type-h2 me-2"></i>
-                Section Heading
-
-            </label>
-
-            <input
-                id="about-heading"
-                class="form-control"
-                type="text"
-                value="About Us">
-
-        </div>
-
-        <div>
-
-            <label
-                for="about-description"
-                class="form-label">
-                <i class="bi bi-text-paragraph me-2"></i>
-                Description *
-
-            </label>
-
-            <textarea
-                id="about-description"
-                class="form-control"
-                rows="6"
-                placeholder="Tell visitors about your business..."></textarea>
-
-        </div>
-
     </div>
-
-</div>
 </section>

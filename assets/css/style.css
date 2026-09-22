@@ -375,3 +375,6 @@
     }
 
 }
+
+/* Compact field-limit/helper text */
+.form-text { font-size: .8rem !important; line-height: 1.3; }

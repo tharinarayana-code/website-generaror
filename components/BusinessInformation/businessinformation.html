@@ -2,214 +2,84 @@
 
     <div>
 
-    <div class="card-header component-header py-3 px-4 d-flex align-items-center justify-content-between">
-
-        <div>
-            <h4 class="mb-0 d-flex align-items-center">
-                <i class="bi bi-building me-2"></i>
-                Business Information
-            </h4>
-            <small class="text-muted">
-                Basic information about your business
-            </small>
+        <div class="card-header component-header py-3 px-4 d-flex align-items-center justify-content-between">
+            <div>
+                <h4 class="mb-0 d-flex align-items-center">
+                    <i class="bi bi-building me-2"></i>
+                    Business Information
+                </h4>
+                <small class="text-muted">Basic information about your business.</small>
+            </div>
         </div>
 
-        <!-- Reserved for future actions -->
-        <!--
-        <div class="component-actions">
-            <button class="btn btn-sm btn-outline-secondary">
-                ?
-            </button>
-        </div>
-        -->
+        <div class="card-body p-4">
+            <div class="row g-3">
 
+                <div class="col-lg-6">
+                    <label for="business-name" class="form-label">
+                        Business Name (Name of your business) <span class="text-danger">*</span>
+                    </label>
+                    <input type="text" class="form-control" id="business-name" maxlength="80" placeholder="[Example: Sunrise Bakery]">
+                    <div class="form-text">Max 80 characters.</div>
+                </div>
+
+                <div class="col-lg-6">
+                    <label for="business-type" class="form-label">Business Type (What kind of business it is)</label>
+                    <input type="text" class="form-control" id="business-type" maxlength="50" placeholder="[Example: Bakery, Clinic, Design Agency]">
+                    <div class="form-text">Max 50 characters.</div>
+                </div>
+
+                <div class="col-lg-6">
+                    <label for="business-phone" class="form-label">
+                        Phone (Main phone number) <span class="text-danger">*</span>
+                    </label>
+                    <input type="tel" class="form-control" id="business-phone" maxlength="15" inputmode="tel" placeholder="[Example: +91 9876543210]">
+                    <div class="form-text">Max 15 characters.</div>
+                </div>
+
+                <div class="col-lg-6">
+                    <label for="business-email" class="form-label">Email (Main business email)</label>
+                    <input type="email" class="form-control" id="business-email" maxlength="254" placeholder="[Example: hello@sunrisebakery.com]">
+                    <div class="form-text">Max 254 characters.</div>
+                </div>
+
+                <div class="col-12">
+                    <label for="business-address-1" class="form-label">Address Line 1 (Main street or building)</label>
+                    <input type="text" class="form-control" id="business-address-1" maxlength="120" placeholder="[Example: 24 MG Road]">
+                    <div class="form-text">Max 120 characters.</div>
+                </div>
+
+                <div class="col-12">
+                    <label for="business-address-2" class="form-label">Address Line 2 (Area or nearby landmark)</label>
+                    <input type="text" class="form-control" id="business-address-2" maxlength="120" placeholder="[Example: Near Central Park]">
+                    <div class="form-text">Max 120 characters.</div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="business-city" class="form-label">City (Your business city)</label>
+                    <input type="text" class="form-control" id="business-city" maxlength="50" placeholder="[Example: Hyderabad]">
+                    <div class="form-text">Max 50 characters.</div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="business-state" class="form-label">State (Your state or region)</label>
+                    <input type="text" class="form-control" id="business-state" maxlength="50" placeholder="[Example: Telangana]">
+                    <div class="form-text">Max 50 characters.</div>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="business-pin" class="form-label">PIN Code (Postal code)</label>
+                    <input type="text" class="form-control" id="business-pin" maxlength="10" inputmode="numeric" placeholder="[Example: 500001]">
+                    <div class="form-text">Max 10 characters.</div>
+                </div>
+
+                <div class="col-12">
+                    <label for="business-description" class="form-label">Business Overview (Short introduction to your business)</label>
+                    <textarea class="form-control" id="business-description" rows="5" maxlength="500" placeholder="[Example: Sunrise Bakery makes fresh breads, cakes and pastries every day using quality ingredients.]"></textarea>
+                    <div class="form-text">Max 500 characters.</div>
+                </div>
+
+            </div>
+        </div>
     </div>
-
-    <div class="card-body p-4">
-
-        <div class="row g-3">
-
-            <div class="col-lg-6">
-
-                <label
-                    for="business-name"
-                    class="form-label">
-
-                    Business Name
-                    <span class="text-danger">*</span>
-
-                </label>
-
-                <input
-                    type="text"
-                    class="form-control"
-                    id="business-name"
-                    placeholder="Enter your business name">
-
-            </div>
-
-            <div class="col-lg-6">
-
-                <label
-                    for="business-type"
-                    class="form-label">
-
-                    Business Type
-
-                </label>
-
-                <input
-                    type="text"
-                    class="form-control"
-                    id="business-type"
-                    placeholder="Restaurant, Agency, Clinic...">
-
-            </div>
-
-            <div class="col-lg-6">
-
-                <label
-                    for="business-phone"
-                    class="form-label">
-
-                    Phone
-                    <span class="text-danger">*</span>
-
-                </label>
-
-                <input
-                    type="number"
-                    class="form-control"
-                    id="business-phone"
-                    placeholder="+91 9876543210">
-
-            </div>
-
-            <div class="col-lg-6">
-
-                <label
-                    for="business-email"
-                    class="form-label">
-
-                    Email
-
-                </label>
-
-                <input
-                    type="email"
-                    class="form-control"
-                    id="business-email"
-                    placeholder="contact@example.com">
-
-            </div>
-
-            <div class="col-12">
-
-                <label
-                    for="business-address-1"
-                    class="form-label">
-
-                    Address Line 1
-
-                </label>
-
-                <input
-                    type="text"
-                    class="form-control"
-                    id="business-address-1">
-
-            </div>
-
-            <div class="col-12">
-
-                <label
-                    for="business-address-2"
-                    class="form-label">
-
-                    Address Line 2
-
-                </label>
-
-                <input
-                    type="text"
-                    class="form-control"
-                    id="business-address-2">
-
-            </div>
-
-            <div class="col-md-4">
-
-                <label
-                    for="business-city"
-                    class="form-label">
-
-                    City
-
-                </label>
-
-                <input
-                    type="text"
-                    class="form-control"
-                    id="business-city">
-
-            </div>
-
-            <div class="col-md-4">
-
-                <label
-                    for="business-state"
-                    class="form-label">
-
-                    State
-
-                </label>
-
-                <input
-                    type="text"
-                    class="form-control"
-                    id="business-state">
-
-            </div>
-
-            <div class="col-md-4">
-
-                <label
-                    for="business-pin"
-                    class="form-label">
-
-                    PIN Code
-
-                </label>
-
-                <input
-                    type="text"
-                    class="form-control"
-                    id="business-pin">
-
-            </div>
-
-            <div class="col-12">
-
-                <label
-                    for="business-description"
-                    class="form-label">
-
-                    Business Overview
-
-                </label>
-
-                <textarea
-                    class="form-control"
-                    id="business-description"
-                    rows="5"
-                    placeholder="Describe your business..."></textarea>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
 </section>

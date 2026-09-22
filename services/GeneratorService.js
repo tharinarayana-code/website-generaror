@@ -160,6 +160,10 @@ export default class GeneratorService {
             data[key] =
                 component.getData();
 
+            if (componentName === "Services" && typeof component.getHeading === "function") {
+                data.servicesHeading = component.getHeading();
+            }
+
         }
 
         this.storageService.save(data);
@@ -293,6 +297,10 @@ export default class GeneratorService {
 
             const service =
                 outputData.services[index];
+
+            if (!service.hasDetailedPage) {
+                continue;
+            }
 
             const html =
                 await this.templateService.renderService({

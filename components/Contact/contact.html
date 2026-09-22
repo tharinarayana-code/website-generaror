@@ -1,92 +1,28 @@
 <section class="contact card component-card shadow-sm border-0 mb-4 mt-4">
-
-<div>
-
-    <div class="card-header component-header">
-
-        <h4 class="mb-0">
-            <i class="bi bi-telephone-fill me-2"></i>Contact
-        </h4>
-
-        <small class="text-muted">
-            Choose how visitors can contact your business.
-        </small>
-
+    <div>
+        <div class="card-header component-header">
+            <h4 class="mb-0"><i class="bi bi-telephone-fill me-2"></i>Contact</h4>
+            <small class="text-muted">Choose how visitors can contact your business.</small>
+        </div>
+        <div class="card-body">
+            <div class="mb-4">
+                <label for="contact-mode" class="form-label"><i class="bi bi-chat-dots me-2"></i>Contact Mode (How visitors should contact you)</label>
+                <select id="contact-mode" class="form-select">
+                    <option value="email">Email</option>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="both">Email + WhatsApp</option>
+                </select>
+            </div>
+            <div id="email-group" class="mb-3">
+                <label for="contact-email" class="form-label"><i class="bi bi-envelope-fill"></i> Email Address (Email visitors can use)</label>
+                <input id="contact-email" type="email" class="form-control" maxlength="254" placeholder="[Example: hello@sunrisebakery.com]">
+                <div class="form-text">Max 254 characters.</div>
+            </div>
+            <div id="whatsapp-group">
+                <label for="contact-whatsapp" class="form-label"><i class="bi bi-whatsapp"></i> WhatsApp Number (Number visitors can message)</label>
+                <input id="contact-whatsapp" type="tel" class="form-control" maxlength="15" inputmode="tel" placeholder="[Example: +91 9876543210]">
+                <div class="form-text">Max 15 characters.</div>
+            </div>
+        </div>
     </div>
-
-    <div class="card-body">
-
-        <div class="mb-4">
-
-            <label
-                for="contact-mode"
-                class="form-label">
-
-                <i class="bi bi-chat-dots me-2"></i>
-                Contact Mode
-
-            </label>
-
-            <select
-                id="contact-mode"
-                class="form-select">
-
-                <option value="email">
-                    Email
-                </option>
-
-                <option value="whatsapp">
-                    WhatsApp
-                </option>
-
-                <option value="both">
-                    Email + WhatsApp
-                </option>
-
-            </select>
-
-        </div>
-
-        <div
-            id="email-group"
-            class="mb-3">
-
-            <label
-                for="contact-email"
-                class="form-label">
-                <i class="bi bi-envelope-fill"></i>
-                Email Address
-
-            </label>
-
-            <input
-                id="contact-email"
-                type="email"
-                class="form-control"
-                placeholder="contact@example.com">
-
-        </div>
-
-        <div id="whatsapp-group">
-
-            <label
-                for="contact-whatsapp"
-                class="form-label">
-                <i class="bi bi-whatsapp"></i>
-                WhatsApp Number
-
-            </label>
-
-            <input
-                id="contact-whatsapp"
-                type="number"
-                class="form-control"
-                placeholder="+91 9876543210">
-
-        </div>
-
-    </div>
-
-</div>
-
 </section>

@@ -1,30 +1,22 @@
 <section class="services card component-card shadow-sm border-0 mb-4">
-<div>
-
-    <div class="card-header component-header d-flex justify-content-between align-items-center">
-
-        <div>
-            <h4 class="mb-0"><i class="bi bi-tools me-2"></i>Services</h4>
-            <small class="text-muted">
-                Add the services your business provides.
-            </small>
+    <div>
+        <div class="card-header component-header d-flex justify-content-between align-items-center">
+            <div>
+                <h4 class="mb-0"><i class="bi bi-tools me-2"></i>Services</h4>
+                <small class="text-muted">Add the services your business provides.</small>
+            </div>
+            <button id="add-service" class="btn btn-primary btn-sm">
+                <i class="bi bi-plus-circle me-2"></i>Add Service
+            </button>
         </div>
-
-        <button
-            id="add-service"
-            class="btn btn-primary btn-sm">
-            <i class="bi bi-plus-circle me-2"></i>
-              Add Service
-
-        </button>
-
+        <div class="component-body">
+            <div class="mb-3">
+                <label for="services-heading" class="form-label">Section Heading (Title for this section) <span class="text-danger">*</span></label>
+                <input id="services-heading" class="form-control" type="text" value="Our Services" maxlength="80" placeholder="[Example: Our Services]">
+                <div class="form-text">Max 80 characters.</div>
+            </div>
+        </div>
+        <div id="services-list" class="card-body"></div>
+        <div class="px-3 pb-3 text-muted small">Up to 10 services.</div>
     </div>
-
-    <div
-        id="services-list"
-        class="card-body">
-
-    </div>
-
-</div>
 </section>

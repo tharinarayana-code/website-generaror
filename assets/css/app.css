@@ -75,3 +75,72 @@ body{
     }
 
 }
+/* -------------------------------- */
+/* File validation modal            */
+/* -------------------------------- */
+
+.file-validation-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.file-validation-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .65);
+}
+
+.file-validation-dialog {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 440px);
+    padding: 28px;
+    border-radius: 14px;
+    background: #fff;
+    color: #212529;
+    text-align: center;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, .3);
+}
+
+.file-validation-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.file-validation-dialog h5 {
+    margin-bottom: 8px;
+}
+
+.file-validation-dialog p {
+    margin-bottom: 20px;
+}
+
+.file-validation-close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    border: 0;
+    background: transparent;
+    font-size: 1.7rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .file-validation-modal {
+        padding: 14px;
+    }
+
+    .file-validation-dialog {
+        padding: 24px 18px;
+    }
+}
+
+
+/* Compact field-limit/helper text */
+.form-text { font-size: .8rem !important; line-height: 1.3; }

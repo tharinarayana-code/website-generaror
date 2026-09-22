@@ -357,3 +357,31 @@ Current work should focus on:
 
 New architectural ideas remain deferred to a future version.
 
+
+---
+
+## 2026-09-22 — Beginner-Friendly Form Update
+
+The website-details form was updated to make first-time use clearer without adding long explanations.
+
+### Current form rules
+
+- Text fields display their maximum character limits.
+- Image fields accept JPG/JPEG, PNG, and WebP only.
+- Maximum image size is 5 MB per uploaded image.
+- Invalid image selections are immediately cleared and reported through a responsive modal.
+- Form labels include short explanations in brackets.
+- Form placeholders use bracketed examples.
+- Services require an image, service name, and brief description.
+- Detailed service descriptions are optional.
+- A detailed description must contain at least 120 characters to create a separate service page and Learn More button.
+- Up to 10 services can be added.
+- Preview opens in a new tab with a Preview Only notice directing the user back to the generator for final generation.
+
+
+### 2026-09-22 Form Polish
+
+- Services now has an editable section heading with a default of `Our Services`.
+- Character-limit/helper text is intentionally compact.
+- Hero Title and About Section Heading no longer show their extra heading icons.
+- Image uploads remain limited to 5 MB per image and JPG/JPEG, PNG, or WebP.
